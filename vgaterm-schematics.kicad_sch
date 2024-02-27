@@ -1875,6 +1875,10 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 492383d6-503f-4ae1-afbe-10e50154d4ea)
   )
+  (label "Clk_{pixel}" (at 73.66 66.04 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right bottom))
+    (uuid 4a23a24f-05ee-44e6-8ece-f88b9de80649)
+  )
   (label "D4" (at 72.39 101.6 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 4d8d2345-9481-491d-b558-b7a9940a312a)
@@ -3010,6 +3014,32 @@
     )
   )
 
+  (symbol (lib_id "Device:C_Small") (at 83.82 66.04 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 5885adf1-1e9c-4d99-ac5b-d9cefe4f64d0)
+    (property "Reference" "C6" (at 83.8263 59.69 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "220n" (at 83.8263 62.23 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 83.82 66.04 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 83.82 66.04 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid b2775d82-9cbd-4f63-bdf8-c571766c33ab))
+    (pin "1" (uuid 34f8fd79-5303-490a-991b-676a2243b16e))
+    (instances
+      (project "vgaterm-schematics"
+        (path "/6b101ec3-37f4-4299-ac87-721c8a68e9ce"
+          (reference "C6") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 39.37 105.41 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 60f8de5a-fd87-4032-aa4d-232326b21a1b)
@@ -3187,6 +3217,32 @@
       (project "vgaterm-schematics"
         (path "/6b101ec3-37f4-4299-ac87-721c8a68e9ce"
           (reference "#FLG01") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R") (at 77.47 66.04 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 8b096248-f0c5-47ce-84ee-6bfd02b758e1)
+    (property "Reference" "R3" (at 77.47 59.69 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "330" (at 77.47 62.23 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 77.47 67.818 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 77.47 66.04 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "2" (uuid f3cfdc60-2162-4c66-b881-eb585415aee5))
+    (pin "1" (uuid 9ef0f434-2aeb-4679-88c7-14accf0f0750))
+    (instances
+      (project "vgaterm-schematics"
+        (path "/6b101ec3-37f4-4299-ac87-721c8a68e9ce"
+          (reference "R3") (unit 1)
         )
       )
     )
@@ -3522,6 +3578,31 @@
       (project "vgaterm-schematics"
         (path "/6b101ec3-37f4-4299-ac87-721c8a68e9ce"
           (reference "#PWR020") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 86.36 66.04 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid a1a5b02f-01f3-433b-bc3e-133034883280)
+    (property "Reference" "#PWR033" (at 86.36 72.39 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 86.36 71.12 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 86.36 66.04 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 86.36 66.04 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid dc847fdd-255f-4aa0-a975-1766c52c96f8))
+    (instances
+      (project "vgaterm-schematics"
+        (path "/6b101ec3-37f4-4299-ac87-721c8a68e9ce"
+          (reference "#PWR033") (unit 1)
         )
       )
     )

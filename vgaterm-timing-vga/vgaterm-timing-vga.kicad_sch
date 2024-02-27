@@ -3324,7 +3324,7 @@
     (property "Value" "DE15_Receptacle_HighDensity_MountingHoles" (at 57.15 100.33 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_Dsub:DSUB-15-HD_Female_Horizontal_P2.29x1.98mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm" (at 66.04 123.19 0)
+    (property "Footprint" "local:DSUB-15-HD_Female_Horizontal_P2.29x2.54mm_EdgePinOffset8.35mm_Housed_MountingHolesOffset10.89mm" (at 66.04 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" " ~" (at 66.04 123.19 0)
